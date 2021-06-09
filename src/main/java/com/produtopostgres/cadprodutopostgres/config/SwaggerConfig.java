@@ -22,7 +22,7 @@ public class SwaggerConfig {
     public Docket produtoapi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.joaobatista.produtoapi"))
+                .apis(RequestHandlerSelectors.basePackage("com.produtopostgres.cadprodutopostgres"))
                 .paths(regex("/api.*"))
                 .build()
                 .apiInfo(metaInfo());
